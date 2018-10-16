@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*=========================重置样式开始==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{ font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;text-align: left;font-weight: normal;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;color:#000000;}
+video::-internal-media-controls-download-button {
+    display:none;           
+}
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;           
+}
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+}
+/*==========================清除浮动开始================================*/
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+    font-size: 0;
+}
+/*========================清除inline-block间隙=========================*/
+.clear-spacing{
+	font-size: 0;
+	letter-spacing: -4px;
+}
+.clear-spacing h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{
+	letter-spacing: normal;
+}
+/*========================多行上下居中=========================*/
+.text-middle{
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+/*========================flex 布局=========================*/
+.fbox{
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+}
+.fbox .item{
+    flex: 1;
+}
+/*========================单行超出 缩略=========================*/
+.text-of{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
